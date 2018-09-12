@@ -13,8 +13,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background: rgba(0,0,0,0.5);
+                color: #ffffff;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
@@ -50,7 +50,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #ffffff;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
@@ -66,6 +66,7 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+            <img src="{{ asset('img.bg-welcome.jpg') }}" alt="">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth

@@ -19,7 +19,7 @@
 
                    <p>Vous etes connecté</p>
 
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/membre/membre') }}">
                             <button type="submit" class="btn btn-primary">
                             {{ __(' entrer') }}
                             </button>
