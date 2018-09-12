@@ -5,7 +5,10 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">bienvenue {{ Auth::user()->name }}</div>
+                <div class="card-header">
+                    <p>bienvenue {{ Auth::user()->name }}</p>
+                <p>Vous etes inscrit depuis : {{ Auth::user()->created_at->format('d/m/Y   h:i:s')}}</p>
+                </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +17,14 @@
                         </div>
                     @endif
 
-                    Vous etes connecté
+                   <p>Vous etes connecté</p>
+
+                        <a href="{{ url('/') }}">
+                            <button type="submit" class="btn btn-primary">
+                            {{ __(' entrer') }}
+                            </button>
+                        </a>
+
                 </div>
             </div>
         </div>
