@@ -1,0 +1,39 @@
+.py-4{
+    padding: 0 !important;
+}
+
+/* ---------------------welcom.blade------------------------- */
+.container-fluid{
+    height: 100vh;
+    background: #484848;
+}
+img{
+    position: relative;
+    padding-top: 15%;
+}
+.app .navbar {
+
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.container{
+    text-align: center;
+    width: 70%;
+    margin: 0  auto;
+}
+
+
+/* ---------------------welcom.blade------------------------- */
+
+/* ---------------------LOGIN.BLADE------------------------- */
+.container .row .col-md-8 .auth{
+    color:#212529;
+}
+
+
+
+
+
+
+
