@@ -3,7 +3,7 @@
 
 @section('content')
         <div class="container-fluid">
-            <img src="{{ asset('img.bg-welcome.jpg') }}" alt="">
+            <img id="bg-welcome"src="{{ asset('img.bg-welcome.jpg') }}" alt="">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth

@@ -1,15 +1,27 @@
 .py-4{
     padding: 0 !important;
 }
+.py-4 img{
+    position: relative;
+    width: 100%;
+    padding: 0 !important;
+}
+navbar-laravel{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+}
 
 /* ---------------------welcom.blade------------------------- */
 .container-fluid{
     height: 100vh;
     background: #484848;
-}
-img{
-    position: relative;
     padding-top: 15%;
+}
+.container-fluid #bg-welcome{
+    position: relative;
+
 }
 .app .navbar {
 
