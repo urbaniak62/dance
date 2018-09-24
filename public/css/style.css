@@ -19,6 +19,14 @@ navbar-laravel{
 
 
 }
+.container #titre{
+    text-transform: uppercase;
+    font-size:6em;
+    color: rgba(7, 7, 7, 0.473);
+    font-weight: 700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -60%;
+}
 /* .container-fluid #bg-welcome{
     position: relative;
 
