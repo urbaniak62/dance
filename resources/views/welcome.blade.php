@@ -4,7 +4,7 @@
 @section('content')
         <div class="container-fluid">
             {{-- <img id="bg-welcome"src="{{ asset('img.bg-welcome.jpg') }}" alt=""> --}}
-            <video autoplay="" class="l_o_h"  loop="" playsinline="" poster="https://ak3.picdn.net/shutterstock/videos/25457273/thumb/1.jpg" style="width:100%;margin-top:-10%;background-size:cover;margin:-10% 0 0 0 ;">
+            <video autoplay="" class="l_o_h"  loop="" playsinline="" poster="https://ak3.picdn.net/shutterstock/videos/25457273/thumb/1.jpg" style="width:100%;background-size:cover;margin:-7% 0 0 0 ;">
                 <source src="{{asset('video/video.webm')}}" type="video/webm">
                 {{-- <source src="https://ak3.picdn.net/shutterstock/videos/25457273/preview/stock-footage-emotional-and-graceful-contemporary-dance-performed-by-champions-slow-motion.mp4" type="video/mp4"></video> --}}
 
