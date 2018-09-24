@@ -44,8 +44,17 @@ navbar-laravel{
 }
 
 
+.form-control{
+    color: #4d4e50;
+    border: 1px solid #627c96;
+}
 
-
+.card-header,.card,hr {
+    border: 1px solid #627c96;
+}
+.card{
+    padding: 10px;
+}
 
 
 

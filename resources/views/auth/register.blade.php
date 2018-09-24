@@ -74,4 +74,52 @@
         </div>
     </div>
 </div>
+<hr>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('ADMINISTRATION') }}</div>
+
+                <div class="card-body">
+                    <form method="POST" action="{{ route('register') }}">
+                    @csrf
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Categorie éleves</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Débutant</option>
+                            <option>Confirmé</option>
+                            <option>Avancé</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Categorie dance</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                            <option>rock 4 tps.</option>
+                            <option>rock 6 tps.</option>
+                            <option>Chat chat.</option>
+                            <option>Tango.</option>
+                            <option>Passodoble.</option>
+                            <option>Rumba.</option>
+                            <option></option>
+                        </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Importer une video.</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Points clefs du cour.</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Enregistrer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
