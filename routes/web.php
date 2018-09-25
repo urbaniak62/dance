@@ -20,3 +20,18 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('membre/membre', 'MembreController@membre')->name('membre/membre');
+
+route::get('admin/admin', 'AdminController@index')->name('adminIndex');
+Route::post('admin/admin', 'AdminController@create')->name('adminCreate');
+
+
+
+
+
+
+
+
+
+
+
+
