@@ -27,16 +27,16 @@
 </div>
 <div class="container">
     <div class="content mot">
-        <h1>LE MOT DU PRESIDENT</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eligendi, quo eos
+        <h1>LE MOT DU PRESIDENT :</h1>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae eligendi, quo eos
             rerum iusto laudantium vel accusantium deserunt nemo repudiandae provident quibusdam
             dolores obcaecati nostrum soluta animi quidem cum corrupti? Lorem ipsum dolor sit, amet consectetur
             adipisicing elit.
             Maiores eaque sequi esse maxime repudiandae natus porro culpa totam magnam nemo velit inventore soluta, a
             ullam expedita.
-            Ut voluptas esse sed.</p>
+            Ut voluptas esse sed.</h4>
     </div>
-    <h3>nos formation dance ?</h3>
+    <h2>Ce que l'on vous propose :</h2>
 </div>
 <div class="container programme">
     <div class="box">
