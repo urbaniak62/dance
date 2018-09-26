@@ -58,7 +58,7 @@
         <div class="detail">
             <div class="content">
                 <i class="fas fa-music"></i>
-                <h3>Rock</h3>
+                <h3>Tango</h3>
                 <a href="#">En savoir plus</a>
             </div>
         </div>
@@ -70,7 +70,7 @@
         <div class="detail">
             <div class="content">
                 <i class="fas fa-music"></i>
-                <h3>Rock</h3>
+                <h3>chacha</h3>
                 <a href="#">En savoir plus</a>
             </div>
         </div>
@@ -82,7 +82,7 @@
         <div class="detail">
             <div class="content">
                 <i class="fas fa-music"></i>
-                <h3>Rock</h3>
+                <h3>pasodoble</h3>
                 <a href="#">En savoir plus</a>
             </div>
         </div>
