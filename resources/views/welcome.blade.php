@@ -87,35 +87,45 @@
             </div>
         </div>
     </div>
-    {{-- <div class="box">
-        <div class="thumb">
-            <img src="{{ asset('img/salsa2.jpeg') }}" alt="">
+</div>
+
+<footer>
+    <div class="content">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+        <div style='overflow:hidden;height:440px;width:700px;color:black;'>
+            <div id='gmap_canvas' style='height:440px;width:700px;'></div>
+            <div><small><a href="https://embedgooglemaps.com/it/">https://embedgooglemaps.com/it/</a></small></div>
+            <div><small><a href="http://botonmegusta.org/">boton me gusta en mi web in ! Read</a></small></div>
+            <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
         </div>
-        <div class="detail">
-            <div class="content">
-                <i class="fas fa-music"></i>
-                <h3>Rock</h3>
-            </div>
+        <script type='text/javascript'>
+            function init_map() {
+                var myOptions = {
+                    zoom: 10,
+                    center: new google.maps.LatLng(50.4520393, 2.9385531000000356),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(50.4520393, 2.9385531000000356)
+                });
+                infowindow = new google.maps.InfoWindow({
+                    content: '<strong>declic dance</strong><br>centre culturelle  RUE ARISTIDE BRIAND  62710 COURRIERES<br>'
+                });
+                google.maps.event.addListener(marker, 'click', function () {
+                    infowindow.open(map, marker);
+                });
+                infowindow.open(map, marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);
+
+        </script>
+        <div class="contact">
+            <h3>Nos horraires</h3>
         </div>
     </div>
-    <div class="box">
-        <div class="thumb">
-            <img src="{{ asset('img/dance1.jpg') }}" alt="">
-        </div>
-        <div class="detail">
-            <div class="content">
-                <i class="fas fa-music"></i>
-                <h3>Rock</h3>
-            </div>
-        </div>
-    </div> --}}
-</div>
-<div class="container-fluid">
-    <footer>
-        <div class="container">
+</footer>
 
-        </div>
-    </footer>
-</div>
 
 @endsection
