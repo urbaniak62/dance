@@ -36,7 +36,7 @@
             ullam expedita.
             Ut voluptas esse sed.</h4>
     </div>
-    <h2>Ce que l'on vous propose :</h2>
+    <h2>Ce que l on vous propose :</h2>
 </div>
 <div class="container programme">
     <div class="box">
@@ -87,6 +87,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 <footer>
@@ -123,9 +124,40 @@
 
         </script>
         <div class="contact">
-            <h3>Nos horraires</h3>
-        </div>
+            <h3>Nos horaires :</h3>
+            <div class="horaires">
+                <ul class="gp2">
+                    <li class="premier">2 em groupe :</li>
+                    <li>lundi / jeudi </li>
+                    <li>de 19h15 à 20h15.</li>
+                </ul>
+                <ul class="gp1">
+                    <li class="premier">1 er groupe :</li>
+                    <li>lundi / jeudi </li>
+                    <li>de 20h15 à 21h15.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="rens" style="text-align:left; whidth:50%;">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Mr fsjhfsjd fhsjhfj</li>
+                    <li>tel : 0632323232</li>
+                </ul>
+                <ul>
+                    <li>Mme ururururu yyyyuufuf :</li>
+                    <li>tel: 0633333333</li>
+                </ul>
+                <ul>
+                    <li>Mme ururururu yyyyuufuf :</li>
+                    <li>tel: 0633333333</li>
+                </ul>
+            </div>        
+        {{--  <div class="tarif">
+            <h3>nos tarif</h3>
+        </div>  --}}
     </div>
+    
 </footer>
 
 

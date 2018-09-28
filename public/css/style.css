@@ -1,6 +1,6 @@
 body {
     height: 110vh;
-    background: #20024a;
+    background: #20024ae6;
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
@@ -68,10 +68,8 @@ body {
 
 .container .mot {
     text-align: center;
-    /* background: #c7c7c9c7; */
     margin-top: -5.1%;
     padding: 30px;
-    /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.4); */
 }
 
 /* ---------------------------------------------------------- */
@@ -80,8 +78,6 @@ body {
 
 
 .programme {
-
-
     height: 500px;
     width: 100%;
     display: flex;
@@ -232,6 +228,7 @@ footer {
     background: #1c0044;
     margin-top: 2.5%;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+
 }
 footer .content{
     display: flex;
@@ -240,6 +237,30 @@ footer .content{
 }
 footer .contact{
     width: 700px;
-    background: #060707;
-
+    background: #351a5b;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
+    padding: 1%;
+    text-transform: uppercase;
+   
+}
+footer .contact .horaires{
+    display: flex;
+    justify-content: space-around;
+    margin:4%;
+}
+footer .contact .horaires {
+    text-align: left;
+}
+footer .contact .horaires .premier{
+    color: red;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 0.em;
+}
+footer .contact .rens ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
 }
