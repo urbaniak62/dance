@@ -93,6 +93,7 @@
     <div class="content">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
         <div style='overflow:hidden;height:440px;width:700px;color:black;'>
+
             <div id='gmap_canvas' style='height:440px;width:700px;'></div>
             <div><small><a href="https://embedgooglemaps.com/it/">https://embedgooglemaps.com/it/</a></small></div>
             <div><small><a href="http://botonmegusta.org/">boton me gusta en mi web in ! Read</a></small></div>

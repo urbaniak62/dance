@@ -74,6 +74,6 @@
 
             @yield('content')
 
-
+    <link rel="stylesheet" src="{{asset('js/main.js')}}">
 </body>
 </html>
