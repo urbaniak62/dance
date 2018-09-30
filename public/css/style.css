@@ -229,7 +229,7 @@ hr {
 footer {
     height: 520px;
     padding-top: 3%;
-    background: #ab47bc;
+    background: #7b1fa2;
     margin-top: 2.5%;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
     font-family: 'Roboto', sans-serif;
@@ -246,7 +246,7 @@ footer .contact{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
     padding: 1%;
     text-transform: uppercase;
-
+    border-radius: 10px;
 }
 footer .contact .horaires{
     display: flex;
@@ -257,14 +257,19 @@ footer .contact .horaires {
     text-align: left;
 }
 footer .contact .horaires .premier{
-    color: red;
+    color: #A7CC33;
+    text-shadow: 1px 1px 1px rgba(167,204,51,.4);
     text-transform: uppercase;
     font-size: 1.3em;
     letter-spacing: 0.em;
+}
+footer .contact .rens-contact{
+    width: 50%;
+    text-align: center;
 }
 footer .contact .rens ul{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    text-align: left;
+
 }

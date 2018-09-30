@@ -138,15 +138,11 @@
                 </ul>
             </div>
             <hr>
-            <div class="rens" style="text-align:left; whidth:50%;">
+            <div class="rens-contact" style="text-align:left; whidth:50%;">
                 <h3>Contact</h3>
                 <ul>
                     <li>Mr fsjhfsjd fhsjhfj</li>
                     <li>tel : 0632323232</li>
-                </ul>
-                <ul>
-                    <li>Mme ururururu yyyyuufuf :</li>
-                    <li>tel: 0633333333</li>
                 </ul>
                 <ul>
                     <li>Mme ururururu yyyyuufuf :</li>
