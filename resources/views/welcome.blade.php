@@ -93,7 +93,7 @@
 <footer>
     <div class="content">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-        <div style='overflow:hidden;height:440px;width:700px;color:black;'>
+        <div style='overflow:hidden;height:440px;width:700px;color:black;box-shadow: 0 5px 20px rgba(0, 0, 0, 1);'>
 
             <div id='gmap_canvas' style='height:440px;width:700px;'></div>
             <div><small><a href="https://embedgooglemaps.com/it/">https://embedgooglemaps.com/it/</a></small></div>
@@ -152,12 +152,12 @@
                     <li>Mme ururururu yyyyuufuf :</li>
                     <li>tel: 0633333333</li>
                 </ul>
-            </div>        
+            </div>
         {{--  <div class="tarif">
             <h3>nos tarif</h3>
         </div>  --}}
     </div>
-    
+
 </footer>
 
 

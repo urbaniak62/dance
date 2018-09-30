@@ -1,6 +1,6 @@
 body {
     height: 110vh;
-    background: #20024ae6;
+    background: #9c27b0;
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body {
     z-index: 999;
     width: 100%;
     background: rgba(255, 255, 255, 0);
-    box-shadow: none;
+    box-shadow: 0 10px 5px rgba(0,0,0,.3);
 }
 
 /* ---------------------welcom.blade------------------------- */
@@ -211,10 +211,14 @@ body {
 .card,
 hr {
     border: 1px solid #627c96;
+    color: black;
+
 }
 
 .card {
     padding: 10px;
+    color: black;
+    margin-top: 80px;
 }
 
 
@@ -225,10 +229,10 @@ hr {
 footer {
     height: 520px;
     padding-top: 3%;
-    background: #1c0044;
+    background: #ab47bc;
     margin-top: 2.5%;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
-
+    font-family: 'Roboto', sans-serif;
 }
 footer .content{
     display: flex;
@@ -237,12 +241,12 @@ footer .content{
 }
 footer .contact{
     width: 700px;
-    background: #351a5b;
+    background: #7b1fa2;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
     padding: 1%;
     text-transform: uppercase;
-   
+
 }
 footer .contact .horaires{
     display: flex;
