@@ -219,6 +219,7 @@ hr {
     padding: 10px;
     color: black;
     margin-top: 80px;
+
 }
 
 
@@ -227,7 +228,7 @@ hr {
 /* -----------------------------------------------------------*/
 
 footer {
-    height: 520px;
+    height: 440px;
     padding-top: 3%;
     background: #7b1fa2;
     margin-top: 2.5%;
@@ -240,7 +241,8 @@ footer .content{
     text-align: center;
 }
 footer .contact{
-    width: 700px;
+    width: 560px;
+    height: 360px;
     background: #7b1fa2;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 1);
@@ -271,5 +273,4 @@ footer .contact .rens ul{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-
 }

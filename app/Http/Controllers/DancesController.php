@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Dances;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class DancesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -23,7 +24,16 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return ('succes');
+        $dances=Dances::create([
+            'groupes'    => request('groupes'),
+            'categories' => request('categories'),
+            'videos'     => request('videos'),
+            'points_clef'=> request('points_clef'),
+        ]);
+        dd($dances);
+        return('succes');
+
+
     }
 
     /**
@@ -40,10 +50,10 @@ class AdminController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Dance  $dance
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Dance $dance)
     {
         //
     }
@@ -51,10 +61,10 @@ class AdminController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Dance  $dance
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Dance $dance)
     {
         //
     }
@@ -63,10 +73,10 @@ class AdminController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Dance  $dance
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Dance $dance)
     {
         //
     }
@@ -74,10 +84,10 @@ class AdminController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Dance  $dance
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Dance $dance)
     {
         //
     }

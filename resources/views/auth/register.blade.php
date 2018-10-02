@@ -40,6 +40,25 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="groupe" class="col-md-4 col-form-label text-md-right">{{ __('Groupe ') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="goupe" type="text" class="form-control{{ $errors->has('groupe') ? ' is-invalid' : '' }}" name="groupe" required>
+
+                                {{--  <select mutiple class="form-control" for="groupe" name="groupe" value="{{  old('groupe') }}" id="groupe" required>
+                                    <option value="1" >groupe : 1</option>
+                                    <option value="2" >groupe : 2</option>
+                                </select>  --}}
+
+                                {{--  @if ($errors->has('groupe'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('groupe') }}</strong>
+                                    </span>
+                                @endif  --}}
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Mot de passe') }}</label>
 
                             <div class="col-md-6">
@@ -74,6 +93,5 @@
         </div>
     </div>
 </div>
-
 
 @endsection

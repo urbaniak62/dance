@@ -9,7 +9,7 @@
         {{--
         <source src="https://ak3.picdn.net/shutterstock/videos/25457273/preview/stock-footage-emotional-and-graceful-contemporary-dance-performed-by-champions-slow-motion.mp4"
             type="video/mp4"></video> --}}
-    <video autoplay="" class="l_o_h" loop="" playsinline="" poster="https://ak3.picdn.net/shutterstock/videos/25457273/thumb/1.jpg"
+     <video autoplay="" class="l_o_h" loop="" playsinline="" poster="https://ak3.picdn.net/shutterstock/videos/25457273/thumb/1.jpg"
         style="width:100%;background-size:cover;margin:-7% 0 0 0 ;">
         <source src="{{asset('video/dance1.mp4')}}" type="video/mp4">
     </video>
@@ -93,9 +93,9 @@
 <footer>
     <div class="content">
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-        <div style='overflow:hidden;height:440px;width:700px;color:black;box-shadow: 0 5px 20px rgba(0, 0, 0, 1);'>
+        <div style='overflow:hidden;height:360px;width:560px;color:black;box-shadow: 0 5px 20px rgba(0, 0, 0, 1);'>
 
-            <div id='gmap_canvas' style='height:440px;width:700px;'></div>
+            <div id='gmap_canvas' style='height:360px;width:700px;'></div>
             <div><small><a href="https://embedgooglemaps.com/it/">https://embedgooglemaps.com/it/</a></small></div>
             <div><small><a href="http://botonmegusta.org/">boton me gusta en mi web in ! Read</a></small></div>
             <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
@@ -137,7 +137,6 @@
                     <li>de 20h15 à 21h15.</li>
                 </ul>
             </div>
-            <hr>
             <div class="rens-contact" style="text-align:left; whidth:50%;">
                 <h3>Contact</h3>
                 <ul>
@@ -153,7 +152,6 @@
             <h3>nos tarif</h3>
         </div>  --}}
     </div>
-
 </footer>
 
 

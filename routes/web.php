@@ -21,8 +21,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('membre/membre', 'MembreController@membre')->name('membre/membre');
 
-route::get('admin/admin', 'AdminController@index')->name('adminIndex');
-Route::post('admin/admin', 'AdminController@create')->name('adminCreate');
+route::get('admin/admin', 'DancesController@index')->name('DancesIndex');
+Route::post('admin/admin', 'DancesController@create')->name('DancesCreate');
 
 
 
