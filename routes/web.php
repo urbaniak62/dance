@@ -19,12 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('membre/membre', 'MembreController@membre')->name('membre/membre');
 
 route::get('admin/admin', 'DancesController@index')->name('DancesIndex');
 Route::post('admin/admin', 'DancesController@create')->name('DancesCreate');
 
 
+Route::get('membre/membre', 'MembreController@membre')->name('membre/membre');
 
 
 

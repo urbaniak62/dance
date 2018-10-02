@@ -29,9 +29,10 @@ class DancesController extends Controller
             'categories' => request('categories'),
             'videos'     => request('videos'),
             'points_clef'=> request('points_clef'),
+
         ]);
-        dd($dances);
-        return('succes');
+
+        return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
 
 
     }
@@ -55,7 +56,10 @@ class DancesController extends Controller
      */
     public function show(Dance $dance)
     {
-        //
+        $dances=Dances::all();
+        return view ('membre/membre',[
+            'dances'=> $dances,
+        ]);
     }
 
     /**

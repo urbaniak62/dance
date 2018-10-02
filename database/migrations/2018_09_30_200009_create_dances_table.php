@@ -17,7 +17,7 @@ class CreateDancesTable extends Migration
             $table->increments('id');
             $table->string('groupes');
             $table->string('categories');
-            $table->string('videos');
+            $table->string('videos')->unique();
             $table->string('points_clef');
             $table->timestamps();
         });
