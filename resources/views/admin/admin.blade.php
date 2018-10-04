@@ -9,7 +9,7 @@
                     <div class="card-header">{{ __('ADMINISTRATION : NOUVELLE VIDEO') }}</div>
 
                     <div class="card-body">
-                        <form method="POST" enctype='multipart/form-data'>
+                        <form method="POST"  enctype='multipart/form-data'>
                         @csrf
                             <div class="form-group">
                                 <label for="groupes" required>groupe</label>
@@ -17,6 +17,12 @@
                                 <option>Groupe 1</option>
                                 <option>Groupe 2</option>
                                 </select>
+
+                                @if ($errors->has('groupes'))
+
+                                @endif
+
+
                             </div>
                             <div class="form-group">
                                 <label for="categories">Categorie dance</label>
@@ -39,11 +45,21 @@
                             <div class="form-group">
                                 <label for="name">Importer une video.</label>
                                 <input type="file" class="form-control-file {{ $errors->has('videos') ? ' is-invalid' : '' }}" name="videos"id="exampleFormControlFile1" required>
+
+                                @if ($errors->has('videos'))
+                                    <p>{{ $errors->first('video') }}</p>
+                                @endif
+
                             </div>
                             <div class="form-group">
                                 <label for="points_clef">Points clefs du cour.</label>
                                 <textarea class="form-control {{ $errors->has('points_clef') ? ' is-invalid' : '' }}" name="points_clef"  id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
+
+                                @if ($errors->has('points_clef'))
+                                    <p style="color:red;font-weight:bold;" >ce champs doit contenir minimum 10 caractere</p>
+                                @endif
+
+                                </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">Enregistrer</button>
                             </div>

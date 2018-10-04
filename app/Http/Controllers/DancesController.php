@@ -24,6 +24,13 @@ class DancesController extends Controller
      */
     public function create()
     {
+        request()->validate([
+            'groupes'=>['required'],
+            'categories'=>['required'],
+            'videos'=>['required'],
+            'points_clef'=>['required','max:255','min:10'],
+        ]);
+
         $dances=Dances::create([
             'groupes'    => request('groupes'),
             'categories' => request('categories'),
@@ -31,8 +38,8 @@ class DancesController extends Controller
             'points_clef'=> request('points_clef'),
 
         ]);
-
-        return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
+            // return view('membre.membre',['dances'=>$dances]);
+         return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
 
 
     }
@@ -45,7 +52,12 @@ class DancesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $dances=Dances::all();
+
+        return view ('membre.membre',[
+            'dances'=> $dances
+        ]);
+
     }
 
     /**
@@ -56,10 +68,7 @@ class DancesController extends Controller
      */
     public function show(Dance $dance)
     {
-        $dances=Dances::all();
-        return view ('membre/membre',[
-            'dances'=> $dances,
-        ]);
+
     }
 
     /**

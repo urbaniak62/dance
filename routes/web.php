@@ -25,7 +25,7 @@ Route::post('admin/admin', 'DancesController@create')->name('DancesCreate');
 
 
 Route::get('membre/membre', 'MembreController@membre')->name('membre/membre');
-
+route::get('membre/membre', 'DancesController@store')->name('membre/store');
 
 
 

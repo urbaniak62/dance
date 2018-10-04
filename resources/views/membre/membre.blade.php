@@ -5,10 +5,10 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10">
-
+                <h1>hello</h1>
             <ul>
             @foreach($dances as $dance )
-                <li>{{$dance->videos}}</li>
+                <li>{{$dance->categories}}</li>
             @endforeach
             </ul>
 
