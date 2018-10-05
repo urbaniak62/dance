@@ -8,13 +8,17 @@
                 <h1>hello</h1>
             <ul>
             @foreach($dances as $dance )
-                <li>{{$dance->categories}}</li>
+                <li>{{$dance->categories}}  {{ $dance->groupes}} {{ $dance->points_clef }} {{ $dance->videos }} </li>
+
             @endforeach
             </ul>
 
 
 
             </div>
+            @foreach($dances as $dance )
+            <p>{{ $dance }}</p>
+            @endforeach
         </div>
     </div>
 

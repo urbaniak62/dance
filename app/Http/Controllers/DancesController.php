@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Dances;
+
 use Illuminate\Http\Request;
+
+
 
 class DancesController extends Controller
 {
@@ -38,6 +41,7 @@ class DancesController extends Controller
             'points_clef'=> request('points_clef'),
 
         ]);
+
             // return view('membre.membre',['dances'=>$dances]);
          return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
 

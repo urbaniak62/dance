@@ -95,7 +95,7 @@
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
         <div style='overflow:hidden;height:360px;width:560px;color:black;box-shadow: 0 5px 20px rgba(0, 0, 0, 1);'>
 
-            <div id='gmap_canvas' style='height:360px;width:700px;'></div>
+            <div id='gmap_canvas' style='height:360px;width:566px;'></div>
             <div><small><a href="https://embedgooglemaps.com/it/">https://embedgooglemaps.com/it/</a></small></div>
             <div><small><a href="http://botonmegusta.org/">boton me gusta en mi web in ! Read</a></small></div>
             <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>

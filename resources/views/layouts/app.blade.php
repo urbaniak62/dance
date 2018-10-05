@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -69,13 +70,18 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
+
                                 </div>
+
                             </li>
+
                         @endguest
+
                     </ul>
                 </div>
             </div>
         </nav>
+
     </div>
 
             @yield('content')
