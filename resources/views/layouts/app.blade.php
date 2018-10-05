@@ -32,6 +32,11 @@
 </head>
 <body>
     <div id="app">
+        <div class="container" style="font-weight:bold;text-transform:uppercase;">
+
+            @include('flash::message')
+
+        </div>
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -83,6 +88,8 @@
         </nav>
 
     </div>
+
+
 
             @yield('content')
 

@@ -21,6 +21,8 @@
         {{-- </div> --}}
     @endif
     <div class="container">
+
+
         <h1 id="titre">DECLIC DANCE</h1>
     </div>
 

@@ -56,6 +56,10 @@ class DancesController extends Controller
      */
     public function store(Request $request)
     {
+        if (auth()->guest()) {
+            flash("vous devez etre membre et connecté pour acceder à cette page")->error();
+            return redirect('/');
+        }
         $dances=Dances::all();
 
         return view ('membre.membre',[
