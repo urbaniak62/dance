@@ -30,22 +30,24 @@ class DancesController extends Controller
         request()->validate([
             'groupes'=>['required'],
             'categories'=>['required'],
-            'videos'=>['required'],
+            // 'videos'=>['required|mimes:mp4,mov,ogg,qt | max:20000',],
+            'videos'=>['required','image'],
             'points_clef'=>['required','max:255','min:10'],
         ]);
 
         $dances=Dances::create([
             'groupes'    => request('groupes'),
             'categories' => request('categories'),
-            'videos'     => request('videos'),
+           $path= 'videos'     => request('videos')->store('videos','public'),
             'points_clef'=> request('points_clef'),
 
         ]);
 
-            // return view('membre.membre',['dances'=>$dances]);
-         return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
+        // return ($path);
+        //  return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
 
-
+            flash('votre formulaire de dance a bien été enregistré')->success();
+            return back();
     }
 
     /**
@@ -61,6 +63,7 @@ class DancesController extends Controller
             return redirect('/');
         }
         $dances=Dances::all();
+
 
         return view ('membre.membre',[
             'dances'=> $dances

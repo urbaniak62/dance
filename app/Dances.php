@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Dances;
 use Illuminate\Database\Eloquent\Model;
 
 class Dances extends Model
