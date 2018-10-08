@@ -36,15 +36,14 @@ class DancesController extends Controller
         ]);
 
         $dances=Dances::create([
-            'groupes'    => request('groupes'),
-            'categories' => request('categories'),
-           $path= 'videos'     => request('videos')->store('videos','public'),
-            'points_clef'=> request('points_clef'),
+            'groupes'       => request('groupes'),
+            'categories'    => request('categories'),
+            $path= 'videos' => request('videos')->store('videos','public'),
+            'points_clef'   => request('points_clef'),
 
         ]);
 
-        // return ($path);
-        //  return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
+
 
             flash('votre formulaire de dance a bien été enregistré')->success();
             return back();
@@ -79,7 +78,7 @@ class DancesController extends Controller
      */
     public function show(Dance $dance)
     {
-
+        //
     }
 
     /**
@@ -114,5 +113,10 @@ class DancesController extends Controller
     public function destroy(Dance $dance)
     {
         //
+    }
+    public function categorie(){
+        $categories= request('categories');
+
+        return($categories);
     }
 }

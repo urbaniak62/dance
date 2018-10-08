@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    {{-- <img src="{{ asset('img/Tango.jpg') }}" alt="image-background-membre"> --}}
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-10">
@@ -20,6 +20,7 @@
                     <ul style="display:flex; justify-content:space-betwen;">
                     @foreach ($dances as $dance)
                     <li style="font-weight:400;padding:10px;list-style:none;border-right:1px solid white;">{{ $dance->categories  }}</li>
+                    <li><img src="/storage{{$dance->videos}}" alt=""></li>
                     @endforeach
 
 
@@ -28,9 +29,11 @@
 
 
             </div>
-            @foreach($dances as $dance )
-            <p>{{ $dance }}</p>
-            @endforeach
+
+
+
+
+
         </div>
     </div>
 

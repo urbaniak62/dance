@@ -1,5 +1,5 @@
 body {
-    height: 110vh;
+    height: 100vh;
     background: #9c27b0;
     color: rgb(255, 255, 255);
     margin: 0;
@@ -7,15 +7,15 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.py-4 {
+/* .py-4 {
     padding: 0 !important;
-}
+} */
 
-.py-4 img {
+/* .py-4 img {
     position: relative;
     width: 100%;
     padding: 0 !important;
-}
+} */
 
 .navbar-laravel {
     position: fixed;
@@ -27,8 +27,9 @@ body {
 
 /* ---------------------welcom.blade------------------------- */
 .container-fluid {
-    height: 100vh;
+    /* height: 100vh; */
     padding: 0;
+    height: 1046px;
 }
 .container-fluid video{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.733);
@@ -38,14 +39,33 @@ body {
     text-align: center;
 }
 
-.container #titre {
+ #titre {
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
     font-size: 6em;
     color: #20024ab3;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    margin-top: -50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
     letter-spacing: 10px;
+}
+ #titre::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform-origin: bottom;
+    transform: rotateX(180deg);
+    line-height: 0.88em;
+    background: linear-gradient(0deg,#fff 0, transparent);
+    -webkit-background-clip: text;
+    /* color: transparent; */
+    opacity: 0.4;
 }
 
 .container h1 {
