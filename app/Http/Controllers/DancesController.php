@@ -30,7 +30,7 @@ class DancesController extends Controller
         request()->validate([
             'groupes'=>['required'],
             'categories'=>['required'],
-            // 'videos'=>['required|mimes:mp4,mov,ogg,qt | max:20000',],
+            // 'videos'=>['required|mimetypes:video/mp4,video/MOV,video/ogg,video/qt | max:200000000'],
             'videos'=>['required','image'],
             'points_clef'=>['required','max:255','min:10'],
         ]);
@@ -38,12 +38,12 @@ class DancesController extends Controller
         $dances=Dances::create([
             'groupes'    => request('groupes'),
             'categories' => request('categories'),
-           $path= 'videos'     => request('videos')->store('videos','public'),
+           $path= 'videos' => request('videos')->store('videos','public'),
             'points_clef'=> request('points_clef'),
 
         ]);
 
-        // return ($path);
+        //  return ($path);
         //  return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
 
             flash('votre formulaire de dance a bien été enregistré')->success();
@@ -114,5 +114,9 @@ class DancesController extends Controller
     public function destroy(Dance $dance)
     {
         //
+    }
+    public function categorie(){
+        $categories = request('categories');
+        return ($categories);
     }
 }

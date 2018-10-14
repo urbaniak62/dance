@@ -29,8 +29,17 @@
 
             </div>
             @foreach($dances as $dance )
-            <p>{{ $dance }}</p>
+            {{--  <p>{{ $dance->id }}</p>  --}}
+            <div class="media">
+
+                <img src="/storage/{{ $dance->videos }}" alt="" style="height:400px;width:400px;">
+                
+            </div>
             @endforeach
+            <br>
+         
+            
+         
         </div>
     </div>
 

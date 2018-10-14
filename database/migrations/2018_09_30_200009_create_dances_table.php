@@ -23,6 +23,7 @@ class CreateDancesTable extends Migration
         });
     }
 
+        
     /**
      * Reverse the migrations.
      *
