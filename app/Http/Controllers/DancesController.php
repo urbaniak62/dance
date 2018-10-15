@@ -79,7 +79,7 @@ class DancesController extends Controller
      */
     public function show(Dance $dance)
     {
-
+        
     }
 
     /**
@@ -117,6 +117,6 @@ class DancesController extends Controller
     }
     public function categorie(){
         $categories = request('categories');
-        return ($categories);
+        return($categories);
     }
 }

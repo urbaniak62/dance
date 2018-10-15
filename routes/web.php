@@ -25,7 +25,7 @@ Route::post('admin/admin', 'DancesController@create')->name('DancesCreate');
 
 Route::get('membre/membre', 'MembreController@membre')->name('membre/membre');
 Route::get('membre/membre', 'DancesController@store')->name('membre/store');
-Route::get('/membre/{$categories}','DancesController@categorie');
+Route::get('membre/{$categories}','DancesController@categorie');
 
 
 

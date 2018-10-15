@@ -29,9 +29,9 @@
 
             </div>
             @foreach($dances as $dance )
-            {{--  <p>{{ $dance->id }}</p>  --}}
             <div class="media">
-
+                
+                <p>{{ $dance->categories }}</p>
                 <img src="/storage/{{ $dance->videos }}" alt="" style="height:400px;width:400px;">
                 
             </div>
