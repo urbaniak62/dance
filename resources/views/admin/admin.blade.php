@@ -19,9 +19,8 @@
                                 </select>
 
                                 @if ($errors->has('groupes'))
-
+                                <p>{{ $errors->first('video') }}</p>
                                 @endif
-
 
                             </div>
                             <div class="form-group">
@@ -32,7 +31,7 @@
                                 <option>rock swing.</option>
                                 <option>Chacha.</option>
                                 <option>Tango.</option>
-                                <option>Pasodoble.</option>
+                                <option>Pasodoble</option>
                                 <option>foxtrot.</option>
                                 <option>Rumba.</option>
                                 <option>valse.</option>

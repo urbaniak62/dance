@@ -37,10 +37,11 @@ body {
     text-align: center;
 }
 
-#titre {
-    margin: 0%;
-    padding: 0%;
-    font-size: 5.4em;
+ #titre {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 6em;
     color: #20024ab3;
     font-weight: 700;
     font-family: 'Montserrat', sans-serif;
@@ -48,9 +49,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
     letter-spacing: 10px;
 }
-#titre::before{
+ #titre::before{
     content: attr(data-text);
     position: absolute;
     top: 0%;
