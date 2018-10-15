@@ -23,13 +23,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 route::get('admin/admin', 'DancesController@index')->name('DancesIndex');
 Route::post('admin/admin', 'DancesController@create')->name('DancesCreate');
 
-
 Route::get('membre/membre', 'MembreController@membre')->name('membre/membre');
-Route::get('membre/membre', 'CategoriesController@show');
 Route::get('membre/membre', 'DancesController@store')->name('membre/store');
-
-
-Route::get('membre/{categories}', 'DancesController@categorie')->name('categorie/voir');
+Route::get('/membre/{categories}', 'DancesController@categorie')->name('categorie/voir');
+// Route::get('membre/membre', 'CategoriesController@store');
 
 
 

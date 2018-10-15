@@ -7,9 +7,6 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-/* .py-4 {
-    padding: 0 !important;
-} */
 
 /* .py-4 img {
     position: relative;
@@ -18,7 +15,7 @@ body {
 } */
 
 .navbar-laravel {
-    position: fixed;
+    font-family: 'Roboto', sans-serif;
     z-index: 999;
     width: 100%;
     background: rgba(255, 255, 255, 0);
@@ -27,9 +24,10 @@ body {
 
 /* ---------------------welcom.blade------------------------- */
 .container-fluid {
-    /* height: 100vh; */
+    /* height:1046px; */
+    height: auto;
     padding: 0;
-    height: 1046px;
+    margin: 0%;
 }
 .container-fluid video{
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.733);
@@ -62,10 +60,9 @@ body {
     transform-origin: bottom;
     transform: rotateX(180deg);
     line-height: 0.88em;
-    background: linear-gradient(0deg,#fff 0, transparent);
+    background: linear-gradient(0deg, #fff 0, transparent);
     -webkit-background-clip: text;
-    /* color: transparent; */
-    opacity: 0.4;
+    opacity: 0.5;
 }
 
 .container h1 {
@@ -88,7 +85,6 @@ body {
 
 .container .mot {
     text-align: center;
-    margin-top: -5.1%;
     padding: 30px;
 }
 

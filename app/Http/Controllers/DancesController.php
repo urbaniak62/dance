@@ -30,20 +30,21 @@ class DancesController extends Controller
         request()->validate([
             'groupes'=>['required'],
             'categories'=>['required'],
-            // 'videos'=>['required|mimes:mp4,mov,ogg,qt | max:20000',],
+            // 'videos'=>['required|mimetypes:video/mp4,video/MOV,video/ogg,video/qt | max:200000000'],
             'videos'=>['required','image'],
             'points_clef'=>['required','max:255','min:10'],
         ]);
 
         $dances=Dances::create([
-            'groupes'       => request('groupes'),
-            'categories'    => request('categories'),
-            $path= 'videos' => request('videos')->store('videos','public'),
-            'points_clef'   => request('points_clef'),
+            'groupes'    => request('groupes'),
+            'categories' => request('categories'),
+           $path= 'videos' => request('videos')->store('videos','public'),
+            'points_clef'=> request('points_clef'),
 
         ]);
 
-
+        //  return ($path);
+        //  return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
 
             flash('votre formulaire de dance a bien été enregistré')->success();
             return back();
@@ -73,10 +74,10 @@ class DancesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Dance  $dance
+     * @param  \App\Dances  $dance
      * @return \Illuminate\Http\Response
      */
-    public function show(Dance $dance)
+    public function show(Dances $dance)
     {
         //
     }
@@ -84,10 +85,10 @@ class DancesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Dance  $dance
+     * @param  \App\Dances  $dance
      * @return \Illuminate\Http\Response
      */
-    public function edit(Dance $dance)
+    public function edit(Dances $dance)
     {
         //
     }
@@ -96,10 +97,10 @@ class DancesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Dance  $dance
+     * @param  \App\Dances  $dance
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Dance $dance)
+    public function update(Request $request, Dances $dance)
     {
         //
     }
@@ -107,16 +108,18 @@ class DancesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Dance  $dance
+     * @param  \App\Dances  $dance
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Dance $dance)
+    public function destroy(Dances $dance)
     {
         //
     }
     public function categorie(){
-        $categories= request('categories');
+        $categories = request('categories');
 
-        return($categories);
+        $dances= Dances::where('categories',$categories);
+        dump($dances);
+        return $categories;
     }
 }

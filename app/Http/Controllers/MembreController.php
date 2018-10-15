@@ -8,7 +8,8 @@ class MembreController extends Controller
 {
     public function membre(){
 
-        return view('membre.membre');
+
+             return view('membre.membre');
 
     }
 

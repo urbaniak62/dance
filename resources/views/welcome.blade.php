@@ -20,11 +20,9 @@
         @endauth
         {{-- </div> --}}
     @endif
-    {{-- <div class="container"> --}}
 
+    <h1 id="titre" data-text="DECLIC DANCE" >DECLIC DANCE</h1>
 
-        <h1 id="titre" data-text="DECLIC DANCE">DECLIC DANCE</h1>
-    {{-- </div> --}}
 
 </div>
 <div class="container">
