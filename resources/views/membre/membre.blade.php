@@ -68,6 +68,7 @@
 
         <div class="col-md-6 ">
             <div class="card">
+                <h5>{{ $dance->categories }}</h5>
                 <div class="card-image">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe width="560" height="315" src="/storage/{{$dance->videos}}" frameborder="0"
@@ -77,7 +78,9 @@
                 </div><!-- card image -->
 
                 <div class="card-content">
-                    <span class="card-title">Will my credits transfer?</span>
+                    <span class="card-title">points clef : <span style="color:red;">{{ $dance->points_clef }}</span></span>
+                    <br>
+                    <span style="color:aqua;">poster le : {{ $dance->created_at }}</span>
 
                 </div><!-- card content -->
 
