@@ -39,6 +39,7 @@ class ValidatePostSize
         }
 
         $metric = strtoupper(substr($postMaxSize, -1));
+
         $postMaxSize = (int) $postMaxSize;
 
         switch ($metric) {

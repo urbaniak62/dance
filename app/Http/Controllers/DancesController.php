@@ -30,8 +30,8 @@ class DancesController extends Controller
         request()->validate([
             'groupes'=>['required'],
             'categories'=>['required'],
-            // 'videos'=>['required|mimetypes:video/mp4,video/MOV,video/ogg,video/qt | max:200000000'],
-            'videos'=>['required','image'],
+             'videos'=>['required','mimes:mp4,MOV,ogg,qt'],
+            // 'videos'=>['required','image'],
             'points_clef'=>['required','max:255','min:10'],
         ]);
 
@@ -42,9 +42,6 @@ class DancesController extends Controller
             'points_clef'=> request('points_clef'),
 
         ]);
-
-        //  return ($path);
-        //  return ('groupe : ') . request('groupes') .('<br> categorie : ') . request('categories') . ('<br> et ') . request('videos') . ('<br> points clef : ') . request('points_clef');
 
             flash('votre formulaire de dance a bien été enregistré')->success();
             return back();
@@ -63,8 +60,6 @@ class DancesController extends Controller
             return redirect('/');
         }
         $dances=Dances::all();
-
-
         return view ('membre.membre',[
             'dances'=> $dances
         ]);
@@ -115,11 +110,11 @@ class DancesController extends Controller
     {
         //
     }
-    public function categorie(){
-        $categories = request('categories');
+    // public function categorie(){
+    //     $categories = request('categories');
 
-        $dances= Dances::where('categories',$categories);
-        dump($dances);
-        return $categories;
-    }
+    //     $dances= Dances::where('categories',$categories);
+    //     dump($dances);
+    //     return $categories;
+    // }
 }
