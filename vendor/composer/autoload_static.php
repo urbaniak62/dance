@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc189281b2abcd4613c08bf7bf82feb6b
+class ComposerStaticInita2741862241fa54a2e1f0e671cf59662
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -2078,6 +2078,8 @@ class ComposerStaticInitc189281b2abcd4613c08bf7bf82feb6b
         'Illuminate\\View\\ViewFinderInterface' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewFinderInterface.php',
         'Illuminate\\View\\ViewName' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewName.php',
         'Illuminate\\View\\ViewServiceProvider' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/View/ViewServiceProvider.php',
+        'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/ConsoleColor.php',
+        'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/Highlighter.php',
         'JsonSerializable' => __DIR__ . '/..' . '/nesbot/carbon/src/JsonSerializable.php',
         'Laracasts\\Flash\\Flash' => __DIR__ . '/..' . '/laracasts/flash/src/Laracasts/Flash/Flash.php',
@@ -2169,9 +2171,14 @@ class ComposerStaticInitc189281b2abcd4613c08bf7bf82feb6b
         'League\\Flysystem\\Util\\MimeType' => __DIR__ . '/..' . '/league/flysystem/src/Util/MimeType.php',
         'League\\Flysystem\\Util\\StreamHasher' => __DIR__ . '/..' . '/league/flysystem/src/Util/StreamHasher.php',
         'Mockery' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery.php',
+        'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV5' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV5.php',
+        'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV6' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV6.php',
+        'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerForV7' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerForV7.php',
+        'Mockery\\Adapter\\Phpunit\\Legacy\\TestListenerTrait' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/Legacy/TestListenerTrait.php',
         'Mockery\\Adapter\\Phpunit\\MockeryPHPUnitIntegration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryPHPUnitIntegration.php',
         'Mockery\\Adapter\\Phpunit\\MockeryTestCase' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/MockeryTestCase.php',
         'Mockery\\Adapter\\Phpunit\\TestListener' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Adapter/Phpunit/TestListener.php',
+        'Mockery\\ClosureWrapper' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/ClosureWrapper.php',
         'Mockery\\CompositeExpectation' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/CompositeExpectation.php',
         'Mockery\\Configuration' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Configuration.php',
         'Mockery\\Container' => __DIR__ . '/..' . '/mockery/mockery/library/Mockery/Container.php',
@@ -4277,11 +4284,11 @@ class ComposerStaticInitc189281b2abcd4613c08bf7bf82feb6b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc189281b2abcd4613c08bf7bf82feb6b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc189281b2abcd4613c08bf7bf82feb6b::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInitc189281b2abcd4613c08bf7bf82feb6b::$fallbackDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitc189281b2abcd4613c08bf7bf82feb6b::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitc189281b2abcd4613c08bf7bf82feb6b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita2741862241fa54a2e1f0e671cf59662::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita2741862241fa54a2e1f0e671cf59662::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInita2741862241fa54a2e1f0e671cf59662::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInita2741862241fa54a2e1f0e671cf59662::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInita2741862241fa54a2e1f0e671cf59662::$classMap;
 
         }, null, ClassLoader::class);
     }

@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <nav class="navbar navbar-expand-lg ">
     <a class="navbar-brand" href="#">CATEGORIES</a>
@@ -33,9 +31,7 @@
                     <a class="dropdown-item" href="#">VALSE LENTE</a>
                 </div>
             </li>
-            {{-- <li class="nav-item active">
-                <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
-            </li> --}}
+            
             <li class="nav-item">
                 <a class="nav-link" href="#">CHACHA</a>
             </li>
@@ -63,31 +59,33 @@
 <div class="container">
     <h1>NOS DERNIERE VIDEO</h1>
     <div class="row">
-        @foreach ( $dances as $dance )
+        <?php $__currentLoopData = $dances; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dance): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 
 
         <div class="col-md-6 ">
             <div class="card">
-                <h5>{{ $dance->categories }}</h5>
+                <h5><?php echo e($dance->categories); ?></h5>
                 <div class="card-image">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="/storage/{{$dance->videos}}" frameborder="0"
+                        <iframe width="560" height="315" src="/storage/<?php echo e($dance->videos); ?>" frameborder="0"
                             allowfullscreen></iframe>
                     </div>
 
                 </div><!-- card image -->
 
                 <div class="card-content">
-                    <span class="card-title">points clef : <span style="color:red;">{{ $dance->points_clef }}</span></span>
+                    <span class="card-title">points clef : <span style="color:red;"><?php echo e($dance->points_clef); ?></span></span>
                     <br>
-                    <span style="color:aqua;">poster le : {{ $dance->created_at }}</span>
+                    <span style="color:aqua;">poster le : <?php echo e($dance->created_at); ?></span>
 
                 </div><!-- card content -->
 
 
             </div>
         </div>
-        @endforeach
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </div>
 
-    @endsection
+    <?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>
