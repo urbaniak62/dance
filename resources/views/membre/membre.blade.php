@@ -71,7 +71,7 @@
                 <h5>{{ $dance->categories }}</h5>
                 <div class="card-image">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="./storage/{{$dance->videos}}" frameborder="0"
+                        <iframe width="560" height="315" src="/storage/{{$dance->videos}}" frameborder="0"
                             allowfullscreen></iframe>
                     </div>
 

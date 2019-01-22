@@ -30,7 +30,7 @@ class DancesController extends Controller
         request()->validate([
             'groupes'=>['required'],
             'categories'=>['required'],
-             'videos'=>['required','mimes:mp4,MOV,ogg,qt'],
+             'videos'=>['required','mimes:mp4,MOV,ogg,qt,avi'],
             // 'videos'=>['required','image'],
             'points_clef'=>['required','max:255','min:10'],
         ]);
